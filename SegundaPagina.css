@@ -1,0 +1,110 @@
+.SegundaPagina{
+background-color: #2E8296;
+height: 100vh;
+box-sizing: border-box;
+}
+
+.box-cabecalho{
+background-color: #85DEF3;
+padding:10px;
+display: flex;
+align-items: center;
+flex-direction: row;
+justify-content: left;
+}
+.box-cabecalho h1 {
+font-size:4rem;
+color:white;
+margin-left: 10px;
+}
+
+.box-interativa{
+background-color: #5CB9CE;
+padding:1em;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+}
+
+.box-cor{
+background-color: #89CAD8;
+padding: 5px;
+}
+
+.box-color-img{
+background-color: #246472;
+padding: 5px;
+}
+
+.trilho {
+    width: 100px; /* Largura do trilho */
+    height: 35px;
+    background-color: gray;
+    border-radius: 10em;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .trilho .indicador {
+    width: 40px; /* Largura do indicador */
+    height: 35px;
+    background-color: #000000;
+    border-radius: 50%;
+    position: absolute;
+    left: 0; /* Inicia na posição 0 */
+    transition: left 0.5s; /* Suaviza o movimento do indicador */
+  }
+  
+  .trilho.dark .indicador {
+    right: 150px; /* Movimento calculado: trilho (100px) - indicador (40px) */
+  }
+
+.box-mudarFluxos{
+display: flex;
+align-items: center;
+}
+
+.box-gmail-logout-dar{
+display: flex;
+align-items: center;
+}
+
+.palito{
+width: 1px; 
+height: 100px; 
+background-color: rgb(255, 255, 255);
+position: relative;
+right: 15em;
+}
+
+.box-left{
+display: flex;
+flex-direction: row-reverse;
+align-items: center;
+justify-content: left;
+gap: 20em;
+}
+
+.box-right{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: left;
+}
+
+.box-right p {
+position: relative;
+right:10em;
+}
+
+.box-right button {
+position: relative;
+right:3em;
+}
+
+.box-tarefas{
+background-color: #0e3641;
+width: 100%;
+height:76.9%;
+}
