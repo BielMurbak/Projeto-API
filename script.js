@@ -26,7 +26,40 @@ else{
 }
 //fim da logica para salvar gmial do usuario
 
+//logica pra mudar de cor o site
 
-document.getElementById('trilho2').addEventListener('click', () => {
-  console.log('Clique detectado!');
+  const darkModeToggle = document.getElementById('darkmode-toggle');
+  const body = document.body;
+
+  darkModeToggle.addEventListener('change', function () {
+    if (darkModeToggle.checked) {
+      body.classList.add('dark-mode');
+    } else {
+      body.classList.remove('dark-mode');
+    }
+  });
+
+
+//logica pra abrir mais opcoes de ver as tarefas 
+
+const seta = document.getElementById('seta');
+const aftherClick = document.getElementById("afterClick");
+
+seta.addEventListener('click', function () {
+ 
+  seta.classList.toggle('active');
+  
+
+  
+  if (seta.classList.contains('active')) {
+    aftherClick.style.display = 'block'; 
+  } else {
+    aftherClick.style.display = 'none';
+  }
 });
+
+
+
+
+
+
