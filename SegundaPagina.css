@@ -1,9 +1,3 @@
-.SegundaPagina{
-background-color: #2E8296;
-height: 100vh;
-box-sizing: border-box;
-}
-
 
 .box-cabecalho{
 background-color: #5ad6f1;
@@ -71,7 +65,7 @@ label:after{
   position:absolute;
   left: 2px; 
   top: 0.5px; 
-  background: linear-gradient(180deg,#ffcc89,#d8860b);
+  background: linear-gradient(180deg,#4eacc1,#4297ab);
   border-radius:180px;
   box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
   transition: 0.3s;
@@ -142,19 +136,46 @@ right:3em;
 }
 
 .box-tarefas{
-background-color: #93e8ff;
+background-color: #79d3eb;
 width: 100%;
-height:76.9%;
+height: 80vh;
+display: flex;
+flex-direction: row;
 }
 
-body.dark-mode .box-tarefas{
+body.dark-theme .box-tarefas{
   background-color: #092127;
 }
 
-body.dark-mode .box-cabecalho{
+body.dark-theme .box-cabecalho{
   background-color: #033541b2;
 }
 
-body.dark-mode .box-interativa{
+body.dark-theme .box-interativa{
   background-color: #037083;
+}
+
+.container-task {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 20%; 
+  height: 90%; 
+  margin: 30px;
+  background-color: rgb(53, 159, 197);
+  border-radius: 25px;
+}
+
+.botao-nova-coluna {
+  margin-top: 30px;
+  width: 10%;
+  height: 4rem;
+  border-radius: 20px;
+}
+
+.botao-nova-tarefa {
+  width: 30%;
+  height: 3rem;
+  border-radius: 20px;
+  align-items: end;
 }
